@@ -1,0 +1,8 @@
+<start_data>
+	<material>
+		<symmetry symmetry="Tetra"/>
+	</material>
+	<geometry>
+		<dimentions D="10,10,10"/>
+	</geometry>
+</start_data>
