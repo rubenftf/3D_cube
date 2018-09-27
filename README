@@ -3,23 +3,23 @@ Cube_codes - contains all python scripts
 cube - contains generated structure
 
 Symmetry and amount of cubes have to be set in the "Cube_codes\start.lxml" file.
-All materials parameters including angle distirbution function will be aoutomatically aragned for the choosen symmetry.
+All materials parameters including angle distribution function will be automatically arranged for the chosen symmetry.
 
-First you need to generate a structure and an applied field map. To this end
+First, you need to generate a structure and an applied field map. To this end
 
 command line | bash ./runs
 (a)mean <cos> value will appear on the screen
 (b)"FlexPDE file is ready" will appear on the screen
-(c) uv.dat with data regarding an apllined fiel map will appear in the "cube" folder
+(c) uv.dat with data regarding an applied field map will appear in the "cube" folder
 
-Then, the generated structure and the applied field map will be used to symmulate structure with polarization, so that
+Then, the generated structure and the applied field map will be used to simulate structure with polarization, so that
 command line | bash ./runr
-a fully polarized system will first time be polorizaed providing .dat files at requared moments of time
+a fully polarized system will first time be polarized providing .dat files at required moments of time
 
 command line | bash ./runr <---- voltage has to be changed
-to repolarized system in the new direction 
+to the repolarized system in the new direction 
 
-after 2 repolarizations system is stable and can be studyed
+after 2 repolarizations system is stable and can be studied
 
-IMPORTANT: time at wich .dat file is expected should be set in the .pde file
-	   data for correlations and other ananlysis is optionaly setted in the .pde - the nessesarly scripts lines comprized in the python script
+IMPORTANT: time at which .dat file is expected should be set in the .pde file
+       data for correlations and other analysis is optionally set in the .pde - the necessary script's lines comprised in the python script
